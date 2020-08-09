@@ -1,0 +1,29 @@
+@import 'App/styles/variables.css';
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    margin: initial;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'helvetica';
+}
+
+body > *,
+*::before,
+*::after {
+    box-sizing: inherit;
+    font-family: inherit;
+    position: relative;
+    display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        height: initial;
+    }
+}
